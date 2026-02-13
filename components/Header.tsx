@@ -25,7 +25,7 @@ export default function Header() {
             router.push(`/search/${searchQuery}`);
         }
     }
-    const handleKeyDown = (e: KeyboardEvent) => {
+    const handleKeyDown = (e: any) => {
         if (e.key === 'Enter') {
             movieSearch();
         } else if (e.key === 'Escape') {
